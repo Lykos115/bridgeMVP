@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import First from './steps/first.js'
-import Second from './steps/second.js'
 import {Text, SafeAreaView, View, Pressable } from 'react-native';
 import { styled } from "nativewind";
 
 import GradientBackground from '../components/GradientBackground.js'
+import First from './steps/first.js'
+import Second from './steps/second.js'
+import Third from './steps/third.js'
 
 const StyledButton = styled(Pressable)
 
@@ -12,7 +13,8 @@ const MultiStepForm = () => {
   const [page, setPage] = useState(0)
   const formSteps = [
     <First />,
-    <Second />
+    <Second />,
+    <Third />
   ]
   return(
     <GradientBackground>
