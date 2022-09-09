@@ -22,15 +22,17 @@ import {
 import { styled } from "nativewind";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import GradientBackground from '../components/GradientBackground.js'
 
 const StyledImage = styled(Image)
 const StyledButton = styled(Pressable)
 
+const StyledBackground = styled(View)
+
 const LandingPage = ({navigation}) => {
 
   return (
-    <View className="h-screen w-screen bg-app-200 bg-gradient-to-tr from-[#FFF9F0] to-[#FDD9A0]">
+    <GradientBackground>
       <SafeAreaView className="w-screen h-screen flex flex-col justify-center items-center">
         <View className="flex items-center">
           <Text className="px-4 text-app-600 text-6xl font-bold">A new way to make</Text>
@@ -43,7 +45,7 @@ const LandingPage = ({navigation}) => {
           </StyledButton>
         </View>
       </SafeAreaView>
-    </View>
+    </GradientBackground>
   );
 };
 
