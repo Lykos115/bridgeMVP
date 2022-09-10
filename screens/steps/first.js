@@ -1,12 +1,14 @@
 import React from 'react';
-import {View, TextInput, Text} from 'react-native'
+
+import QuestionText from '../../components/QuestionText';
+import QuestionInput from '../../components/QuestionInput';
 
 const First = () => {
   return (
-    <View className='flex flex-col'>
-      <Text>First Step</Text>
-      <TextInput className='bg-app-50'/>
-    </View>
+    <>
+      <QuestionText question="What's your student email?" />
+      <QuestionInput placeHolder="email"/>
+    </>
 
   )
 }
