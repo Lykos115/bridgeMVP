@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, TextInput, Text, Pressable} from 'react-native'
+import {View, Text, Pressable} from 'react-native'
 import QuestionText from '../../components/QuestionText.js';
 import QuestionInput from '../../components/QuestionInput.js';
 
 const Second = () => {
   return (
-    <View className='flex flex-col p-4'>
+    <>
       <QuestionText question='Verify your student email'>
         <Text className='text-lg'>Enter the code we've sent by email to</Text>
         <View className='flex flex-row pb-4 items-center'>
@@ -14,7 +14,7 @@ const Second = () => {
         </View>
       </QuestionText>
       <QuestionInput placeHolder="code"/>
-    </View>
+    </>
 
   )
 }

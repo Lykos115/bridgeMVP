@@ -7,27 +7,18 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView,
-  ScrollView,
-  StatusBar,
   Text,
-  useColorScheme,
   View,
   Image,
   Pressable,
-  Alert
 } from 'react-native';
 import { styled } from "nativewind";
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import GradientBackground from '../components/GradientBackground.js'
 
 const StyledImage = styled(Image)
 const StyledButton = styled(Pressable)
-
-const StyledBackground = styled(View)
 
 const LandingPage = ({navigation}) => {
 
